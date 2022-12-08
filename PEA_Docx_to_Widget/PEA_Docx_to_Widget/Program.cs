@@ -67,9 +67,9 @@ namespace PEA_Docx_to_Widget
 
 
 
-            string inputDoc = @"D:\HHMI\Input\HHMI Genes Guide.docx";
+            string inputDoc = @"D:\HHMIAutomationMain\Input\HHMI Genes Guide.docx";
             string glossaryEnable = "-glossary=no";
-            string output_path = @"D:\HHMI\Input";
+            string output_path = @"D:\HHMIAutomationMain\Input";
             if (inputDoc == null)
             {
                 Console.WriteLine("Invalid Path.");
