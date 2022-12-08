@@ -1,0 +1,1 @@
+pandoc.exe -t epub --reference-links --epub-subdirectory=OEBPS --top-level-division=section -s input.docx -s -o docxall.epub

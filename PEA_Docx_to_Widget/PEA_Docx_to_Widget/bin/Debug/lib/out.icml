@@ -1,0 +1,2860 @@
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Programme: PACE_Phase 2</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Storyboard: Lesson</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>File name: Navigation and New Templates</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Title: The Gold Rush (Sprint - 2)</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>&#x2028;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Storyboard Instructions *</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="3" ColumnCount="2">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Mandatory field</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>To be discussed and finalized</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Any field with no info</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Add “</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>NA”</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content> in case there is no information</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Media files allowed</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>.png, .jpeg/.jpg,mp3 and mp4</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>*Will keep adding the instructions during the development stage</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Storyboard Metadata</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="17" ColumnCount="2">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Type</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Lesson</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>File_name</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>PACE_HIST07_T12_L07</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Version</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>1.0</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The Gold Rush</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Brief_description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The discovery of gold in the 1850s sparked immigration from around the world, expanded the Australian economy, and led to the emergence of a new national identity.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Long_description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The discovery of gold in the 1850s started a series of rushes that transformed the Australian colonies.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The first discoveries of payable gold were at Ophir in New South Wales and then at Ballarat and Bendigo Creek in Victoria.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>In 1851 gold-seekers from around the world began pouring into the colonies, changing the course of Australian history.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The gold rushes greatly expanded Australia’s population, boosted its economy, and led to the emergence of a new national identity.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Learning_intention</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Success_criteria</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Subject</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>History</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Year level</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>7</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:10" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Course</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:10" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:11" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Unit</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:11" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:12" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>State</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:12" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Vic</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:13" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>AC_code</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:13" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:14" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>AC_descriptor</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:14" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:15" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Learning_intention</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:15" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:16" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Estimated_time</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:16" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Screen 1 - This is the title1 (This will be used as breadcrumb and Navigation)</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="11" ColumnCount="3">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Column Name="2" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateID</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text_001</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:0" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateName</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:1" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Template Description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text and headings</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:2" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Metallic bonding (This is options)</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:3" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Main-text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text_Heading</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>The metallic bonding model – H1</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text_Text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Explore the way that triangles form patterns.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Remember to </Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>enterprise</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content> the problem from various directions. How many triangles are required to ensure you have listed every possibility?</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text_Heading</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>The bonding model – H1</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Text_Text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>In the news: Tongan Volcanic Eruption</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Tongan geologists watched a massive plume of ash rise in the sky during a continuous eruption of the Hunga Tonga-Hunga Ha’apai volcano on Jan. 14.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>While watching this video, recall the three main types of rock produced in a volcanic eruption, and explain which one would be associated with this eruption.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Teacher only</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="2:8" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Discoverable</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="2:9" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:10" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Notes</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:10" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="2:10" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="14" ColumnCount="2">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateID</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TextandGr_001</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateName</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Graphic &amp; text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Template Description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>An image/graphic with or without text &amp; title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Introduction – This is conversion Utility</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Main-text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>The discovery of gold in the 1850s started a series of rushes that transformed the Australian colonies.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The first discoveries of payable gold were at Ophir in New South Wales and then at Ballarat and Bendigo Creek in Victoria.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>In 1851 gold-seekers from around the world began pouring into the colonies, changing the course of Australian history.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Table 1.1 - This is table Caption</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="1" BodyRowCount="5" ColumnCount="5">
+      <Column Name="0" />
+      <Column Name="1" />
+      <Column Name="2" />
+      <Column Name="3" />
+      <Column Name="4" />
+      <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; TableHeader">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>This is row head</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; TableHeader">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>This is row head</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:0" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; TableHeader">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>This is row head</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="3:0" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="4:0" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Text with Col span 3</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Text with Row span</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="3:1" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="4:1" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text 1</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Text with Row span 2</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text 3</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="3:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="4:2" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Text with Row span 1</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="2:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text 3</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="3:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="4:3" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Text with Col span 2</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="3:4" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="4:4" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text 1</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Normal text 2</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:5" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Text with Col span 3</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="3:5" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="4:5" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+    </Table>
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TableCaption">
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>The gold rushes greatly expanded Australia’s population, boosted its economy, and led to the emergence of a new national identity.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Graphic</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32711 0 0 0.3277 486.5 -333">
+          <Properties>
+            <PathGeometry>
+              <GeometryPathType PathOpen="false">
+                <PathPointArray>
+                  <PathPointType Anchor="-486.5 -333" LeftDirection="-486.5 -333" RightDirection="-486.5 -333" />
+                  <PathPointType Anchor="-486.5 333" LeftDirection="-486.5 333" RightDirection="-486.5 333" />
+                  <PathPointType Anchor="486.5 333" LeftDirection="486.5 333" RightDirection="486.5 333" />
+                  <PathPointType Anchor="486.5 -333" LeftDirection="486.5 -333" RightDirection="486.5 -333" />
+                </PathPointArray>
+              </GeometryPathType>
+            </PathGeometry>
+          </Properties>
+          <Image Self="ue6" ItemTransform="0.32711 0 0 0.3277 -486.5 -333">
+            <Properties>
+              <Profile type="string">
+                $ID/Embedded
+              </Profile>
+            </Properties>
+            <Link Self="ueb" LinkResourceURI="file:media/image1.png" />
+          </Image>
+        </Rectangle>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>FFN</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>FFN_PACE_HIST07_T12_L07_dummy001.jpg</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Caption</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+        <Content>‘Deep Sinking’, Bakery Hill, Ballarat, 1853</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content> by ST Gill</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Acknowledgements</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>National Museum of Australia</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Alt text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:10" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Media position</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>&#x2028;</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>(top/bottom/left/right)</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:10" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Top</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:11" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Teacher only</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:11" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:12" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Discoverable</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:12" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:13" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Notes</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:13" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Screen 2 - This is the title2 (This will be used as breadcrumb and Navigation)</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="10" ColumnCount="2">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateID</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Widget_001</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateName</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Widget and Text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Template Description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>An HTML widget with or without text &amp; title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Exploring patterns - trianges</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Main-text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Explore the way that triangles form patterns and </Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>franchise</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>. Remember to approach the problem from various </Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>enterprise</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>. How many triangles are required to ensure you have listed every possibility?</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="21" ColumnCount="3">
+      <Column Name="0" />
+      <Column Name="1" />
+      <Column Name="2" />
+      <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: nucleus</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: nucleolus</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:0" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; BulList &gt; first &gt; Paragraph" NumberingContinue="false">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>membrane-bound: double membrane</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; BulList &gt; first &gt; Paragraph" NumberingContinue="false">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>contains DNA</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• made up of proteins and RNA</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:1" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; BulList &gt; first &gt; Paragraph" NumberingContinue="false">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>contains genetic information (used for the synthesis of proteins)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; BulList &gt; first &gt; Paragraph" NumberingContinue="false">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>directs activities of the cell</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• responsible for formation of incomplete ribosomes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:2" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:3" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:4" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_17.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32706 0 0 0.32706 224.5 -158">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-224.5 -158" LeftDirection="-224.5 -158" RightDirection="-224.5 -158" />
+                      <PathPointType Anchor="-224.5 158" LeftDirection="-224.5 158" RightDirection="-224.5 158" />
+                      <PathPointType Anchor="224.5 158" LeftDirection="224.5 158" RightDirection="224.5 158" />
+                      <PathPointType Anchor="224.5 -158" LeftDirection="224.5 -158" RightDirection="224.5 -158" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32706 0 0 0.32706 -224.5 -158">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image2.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_18.tif</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32762 0 0 0.32706 210 -158">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-210 -158" LeftDirection="-210 -158" RightDirection="-210 -158" />
+                      <PathPointType Anchor="-210 158" LeftDirection="-210 158" RightDirection="-210 158" />
+                      <PathPointType Anchor="210 158" LeftDirection="210 158" RightDirection="210 158" />
+                      <PathPointType Anchor="210 -158" LeftDirection="210 -158" RightDirection="210 -158" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32762 0 0 0.32706 -210 -158">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image3.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:5" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_19.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32728 0 0 0.32693 208 -181">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-208 -181" LeftDirection="-208 -181" RightDirection="-208 -181" />
+                      <PathPointType Anchor="-208 181" LeftDirection="-208 181" RightDirection="-208 181" />
+                      <PathPointType Anchor="208 181" LeftDirection="208 181" RightDirection="208 181" />
+                      <PathPointType Anchor="208 -181" LeftDirection="208 -181" RightDirection="208 -181" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32728 0 0 0.32693 -208 -181">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image4.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured scanning electron micrograph (SEM) of a section through a liver cell showing the nucleus (pink) and the nuclear envelope with its many pores (tiny circles).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of the external surface of a nuclear envelope in an onion root tip cell. The envelope consists of a double membrane (purple), with nuclear pores (black circles). Contained within the nucleus are the chromatin fibres (yellow and orange).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:6" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of a section through cells in leaf tissue from an </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>Aconitum</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> sp. plant. At centre is a cell nucleus with its nucleolus (red).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: rough endoplasmic reticulum (RER)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: ribosome</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:7" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: Golgi apparatus (also known as Golgi body, Golgi complex)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• membrane-bound</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• composed of a network of membranous tubules and sacs (called cisternae)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• ribosomes bind to the membrane</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• composed of proteins and ribosomal RNA</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• found free in the cytoplasm or attached to endoplasmic reticulum</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:8" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• membrane-bound</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• stack of cisternae that are not connected to each other</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• synthesises and processes proteins (often by adding carbohydrates to proteins produced by the ribosomes to form glycoproteins)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• synthesise proteins (translate messenger RNA into proteins)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• RER-bound ribosomes synthesise proteins for export from the cell</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:9" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• further processes and packages proteins into vesicles for export from the cell (except lysosomes, which remain in the cell)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:10" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:10" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:10" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:11" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:11" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:11" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:12" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_20.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32706 0 0 0.32738 303 -221">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-303 -221" LeftDirection="-303 -221" RightDirection="-303 -221" />
+                      <PathPointType Anchor="-303 221" LeftDirection="-303 221" RightDirection="-303 221" />
+                      <PathPointType Anchor="303 221" LeftDirection="303 221" RightDirection="303 221" />
+                      <PathPointType Anchor="303 -221" LeftDirection="303 -221" RightDirection="303 -221" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32706 0 0 0.32738 -303 -221">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image5.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:12" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_21.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32741 0 0 0.32736 202.5 -153.5">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-202.5 -153.5" LeftDirection="-202.5 -153.5" RightDirection="-202.5 -153.5" />
+                      <PathPointType Anchor="-202.5 153.5" LeftDirection="-202.5 153.5" RightDirection="-202.5 153.5" />
+                      <PathPointType Anchor="202.5 153.5" LeftDirection="202.5 153.5" RightDirection="202.5 153.5" />
+                      <PathPointType Anchor="202.5 -153.5" LeftDirection="202.5 -153.5" RightDirection="202.5 -153.5" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32741 0 0 0.32736 -202.5 -153.5">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image6.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:12" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_22.ti</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32725 0 0 0.32706 122 -139.5">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-122 -139.5" LeftDirection="-122 -139.5" RightDirection="-122 -139.5" />
+                      <PathPointType Anchor="-122 139.5" LeftDirection="-122 139.5" RightDirection="-122 139.5" />
+                      <PathPointType Anchor="122 139.5" LeftDirection="122 139.5" RightDirection="122 139.5" />
+                      <PathPointType Anchor="122 -139.5" LeftDirection="122 -139.5" RightDirection="122 -139.5" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32725 0 0 0.32706 -122 -139.5">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image7.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:13" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of endoplasmic reticulum in an olfactory epithelium supporting cell. On the surface of some of the ER membranes are ribosomes (yellow spheres).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:13" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of rough endoplasmic reticulum in an olfactory bulb mitral cell. On the surface of the ER membrane are numerous ribosomes (small spheres).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:13" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of a pancreatic cell, showing the Golgi apparatus and vesicles.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:14" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: lysosome</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:14" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: smooth endoplasmic reticulum (SER)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:14" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Organelle: mitochondrion</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:15" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• membrane-bound</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• vesicle containing digestive enzymes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:15" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• membrane-bound</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• network of cisternae</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:15" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Structure</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• membrane-bound: double membrane; the inner membrane is highly folded</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• contains DNA</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:16" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• digest waste and foreign material</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:16" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• synthesis of lipids</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:16" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Function:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>• release energy from organic compounds</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:17" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> No</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:17" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:17" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in plants:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:18" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:18" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:18" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+            <Content>Present in animals:</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Yes</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:19" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_23.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32707 0 0 0.32731 143 -211">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-143 -211" LeftDirection="-143 -211" RightDirection="-143 -211" />
+                      <PathPointType Anchor="-143 211" LeftDirection="-143 211" RightDirection="-143 211" />
+                      <PathPointType Anchor="143 211" LeftDirection="143 211" RightDirection="143 211" />
+                      <PathPointType Anchor="143 -211" LeftDirection="143 -211" RightDirection="143 -211" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32707 0 0 0.32731 -143 -211">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image8.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:19" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_24.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32743 0 0 0.32702 151.5 -210">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-151.5 -210" LeftDirection="-151.5 -210" RightDirection="-151.5 -210" />
+                      <PathPointType Anchor="-151.5 210" LeftDirection="-151.5 210" RightDirection="-151.5 210" />
+                      <PathPointType Anchor="151.5 210" LeftDirection="151.5 210" RightDirection="151.5 210" />
+                      <PathPointType Anchor="151.5 -210" LeftDirection="151.5 -210" RightDirection="151.5 -210" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32743 0 0 0.32702 -151.5 -210">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image9.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:19" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>HB12_5e_02_S01_25.tif</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br />
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.32778 0 0 0.3273 130.5 -98">
+              <Properties>
+                <PathGeometry>
+                  <GeometryPathType PathOpen="false">
+                    <PathPointArray>
+                      <PathPointType Anchor="-130.5 -98" LeftDirection="-130.5 -98" RightDirection="-130.5 -98" />
+                      <PathPointType Anchor="-130.5 98" LeftDirection="-130.5 98" RightDirection="-130.5 98" />
+                      <PathPointType Anchor="130.5 98" LeftDirection="130.5 98" RightDirection="130.5 98" />
+                      <PathPointType Anchor="130.5 -98" LeftDirection="130.5 -98" RightDirection="130.5 -98" />
+                    </PathPointArray>
+                  </GeometryPathType>
+                </PathGeometry>
+              </Properties>
+              <Image Self="ue6" ItemTransform="0.32778 0 0 0.3273 -130.5 -98">
+                <Properties>
+                  <Profile type="string">
+                    $ID/Embedded
+                  </Profile>
+                </Properties>
+                <Link Self="ueb" LinkResourceURI="file:media/image10.jpeg" />
+              </Image>
+            </Rectangle>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:20" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of two lysosomes in a pancreatic cell. Lysosomes (green) are small spherical vesicles bound by a single membrane (clearest on right lysosome). Left lysosome is shown in cross-section.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:20" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM showing smooth (top right) and rough (bottom centre) endoplasmic reticulum (light pink) inside a cell. Lipid droplets (round blue structures) and mitochondria can also be seen in this image.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:20" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Coloured SEM of a single mitochondrion (pink, centre) in the cytoplasm of an intestinal epithelial cell.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+    </Table>
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TableCaption">
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Before you begin, download the laboratory notes. &lt;download|prac_1_lab_notes.pdf|Lab notes!&gt;</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Alt text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>FFN</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <HyperlinkTextSource Self="htss-1" Name="" Hidden="false">
+        <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+          <Content>https://pacepoc.blob.core.windows.net/assets/html_widgets/7_6_exploring_patterns_triangle/index.html</Content>
+        </CharacterStyleRange>
+      </HyperlinkTextSource>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Teacher only</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Discoverable</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Notes</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>NA</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="10" ColumnCount="2">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateID</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Learnosity_001</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateName</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Learnosity and Text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Template Description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>A Learnosity Activity with or without text &amp; title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Lesson review</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Main-text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>As Hitler became </Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>innovation</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content> increasingly militant in Germany throughout 1930s, the rest of Europe worked hard to avoid war. Germany’s invasion of Poland on 1 September 1939 brought these attempts to an end. Britain and France declared war on Germany , </Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>franchise</Content>
+      </CharacterStyleRange>
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+    <Br />
+    <Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="5" ColumnCount="3">
+      <Column Name="0" />
+      <Column Name="1" />
+      <Column Name="2" />
+      <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Results of the ability of cell cultures to absorb serine following various treatments</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="2:0" AppliedCellStyle="CellStyle/Cell">
+      </Cell>
+      <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Culture</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Treatment</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:1" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Result</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>radioactive serine solution only</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:2" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>radioactive serine found in the cells</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>B</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>mercury solution (damages protein carriers and channels) and radioactive serine solution</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:3" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>no radioactive serine in the cells</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>C</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>ATPase inhibitor and radioactive serine solution (ATPase catalyses the formation of ATP from ADP and P</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Subscript">
+            <Content>i</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>)</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+      <Cell Name="2:4" AppliedCellStyle="CellStyle/Cell">
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TablePar">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>radioactive serine found in the cells</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+      </Cell>
+    </Table>
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; TableCaption">
+    </ParagraphStyleRange>
+    <Br />
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar &gt; Paragraph">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Answer the questions in the following activity.</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>ActivityID</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>PEAR_8952ed5a-c82d-4009-a62c-9e1924b12c2a</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>FFN</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>https://assessment.pearsonplaces.com.au/content/review/HB02_LBS_VIC_CH06_M01</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Teacher only</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Discoverable</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Notes</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>https://author.learnosity.com/org/765/v1/item/editornew/?ref=PEAR_8952ed5a-c82d-4009-a62c-9e1924b12c2a</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Screen 3 - This is the title1 (This will be used as breadcrumb and Navigation)</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<Table AppliedTableStyle="TableStyle/Table" HeaderRowCount="0" BodyRowCount="13" ColumnCount="3">
+  <Column Name="0" />
+  <Column Name="1" />
+  <Column Name="2" />
+  <Cell Name="0:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateID</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:0" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_001</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:0" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>TemplateName</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:1" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary List</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:1" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Template Description</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:2" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>A List of Glossary words with definitions</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:2" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Title</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:3" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:3" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Main-text</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_Term</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:4" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>enterprise</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:5" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_definition</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:5" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>ready to undertake difficult or challenging projects; energetic and daring</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:6" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_Term</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:6" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>franchise</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:7" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_definition</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:7" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>Where a parent business (franchisor) sells permission to independent people (franchisee) to use their business systems, sell their products and use their name for a certain period of time</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:8" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_Term</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:8" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>innovation</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:9" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="1:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Glossary_definition</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="2:9" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+        <Content>A new product, service, idea or way of doing something better</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="0:10" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Teacher only</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:10" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="2:10" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:11" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Discoverable</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:11" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="2:11" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="0:12" AppliedCellStyle="CellStyle/Cell">
+    <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TablePar">
+      <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+        <Content>Notes</Content>
+      </CharacterStyleRange>
+    </ParagraphStyleRange>
+  </Cell>
+  <Cell Name="1:12" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+  <Cell Name="2:12" AppliedCellStyle="CellStyle/Cell">
+  </Cell>
+</Table>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TableCaption">
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>&#x2028;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Output</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>There will be 2 outputs</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Output 1:</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> A dedicated page need to be created for glossary similar to the below</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.40125 0 0 0.40116 562 -241">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-562 -241" LeftDirection="-562 -241" RightDirection="-562 -241" />
+              <PathPointType Anchor="-562 241" LeftDirection="-562 241" RightDirection="-562 241" />
+              <PathPointType Anchor="562 241" LeftDirection="562 241" RightDirection="562 241" />
+              <PathPointType Anchor="562 -241" LeftDirection="562 -241" RightDirection="562 -241" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.40125 0 0 0.40116 -562 -241">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:media/image11.png" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Glossary_Term</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> need to be linked in the other template and below is the output</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.99549 0 0 0.99494 226.52055 -75.61644">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-226.52055 -75.61644" LeftDirection="-226.52055 -75.61644" RightDirection="-226.52055 -75.61644" />
+              <PathPointType Anchor="-226.52055 75.61644" LeftDirection="-226.52055 75.61644" RightDirection="-226.52055 75.61644" />
+              <PathPointType Anchor="226.52055 75.61644" LeftDirection="226.52055 75.61644" RightDirection="226.52055 75.61644" />
+              <PathPointType Anchor="226.52055 -75.61644" LeftDirection="226.52055 -75.61644" RightDirection="226.52055 -75.61644" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.99549 0 0 0.99494 -226.52055 -75.61644">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:media/image12.png" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Glossary</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;span data-glossary= </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>‘Glossary_definition</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>' class='global-glossary'&gt; </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Glossary_Term</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/span&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;span data-glossary='A new product, service, idea or way of doing something better' class='global-glossary'&gt; innovation&lt;/span&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Complex Table HTML</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;table border=&quot;1&quot; cellpadding=&quot;5&quot; width=&quot;100%&quot; style=&quot;color: #000000;&quot;&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;caption&gt;&lt;/caption&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td colspan=&quot;3&quot;&gt;Text with Colspn 3&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td rowspan=&quot;3&quot;&gt;Text with rowspan 5&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 1&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td rowspan=&quot;2&quot;&gt;Text with rowspan 2&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 3&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 4&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;!-- Row C --&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td rowspan=&quot;2&quot;&gt;Text with rowspan 1&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 3&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 4&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;!-- Row D --&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td colspan=&quot;3&quot;&gt;Text with colspan 2&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 5&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;!-- Row E --&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 1&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td&gt;Normal text 2&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;td colspan=&quot;3&quot;&gt;Text with colspan 3&lt;/td&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/tr&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/table&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/table&gt;</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>

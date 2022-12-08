@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHMI_Docx_to_Widget", "PEA_Docx_to_Widget\HHMI_Docx_to_Widget.csproj", "{ABBA1F44-4614-49BD-80C8-C5A7521CDBCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABBA1F44-4614-49BD-80C8-C5A7521CDBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBA1F44-4614-49BD-80C8-C5A7521CDBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBA1F44-4614-49BD-80C8-C5A7521CDBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBA1F44-4614-49BD-80C8-C5A7521CDBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97C09185-D1D2-45BB-A5FE-7B09EF4BBA8A}
+	EndGlobalSection
+EndGlobal
