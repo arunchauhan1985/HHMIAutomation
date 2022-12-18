@@ -24,6 +24,8 @@ namespace hhmi_Docx_to_Widget
 
         public class ChData
         {
+            public string pageId { get; set; }
+            public string content { get; set; }
         }
 
         public class ChildElement
@@ -77,7 +79,7 @@ namespace hhmi_Docx_to_Widget
             public string helpPopupContent { get; set; }
             public List<Footer> footer { get; set; }
             public List<Navigation> navigation { get; set; }
-            public ChData chData { get; set; }
+            public List<ChData> chData { get; set; }
         }
     }
 }

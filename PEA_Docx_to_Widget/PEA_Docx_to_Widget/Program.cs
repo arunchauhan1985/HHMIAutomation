@@ -33,6 +33,8 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Globalization;
 using static PEA_Docx_to_Widget.Glossary;
+using static hhmi_Docx_to_Widget.HHMI;
+using hhmi_Docx_to_Widget;
 
 namespace PEA_Docx_to_Widget
 {
@@ -67,9 +69,9 @@ namespace PEA_Docx_to_Widget
 
 
 
-            string inputDoc = @"D:\HHMIAutomationMain\Input\HHMI Genes Guide.docx";
+            string inputDoc = @"D:\HHMI\Input\HHMI Genes Guide.docx";
             string glossaryEnable = "-glossary=no";
-            string output_path = @"D:\HHMIAutomationMain\Input";
+            string output_path = @"D:\HHMI\Input";
             if (inputDoc == null)
             {
                 Console.WriteLine("Invalid Path.");
@@ -90,10 +92,535 @@ namespace PEA_Docx_to_Widget
                 output_path = WordExportProcess(inputDoc, newName, tempFolder, output_path);
                 string titleName = GetTitleName(output_path + "\\" + Path.GetFileNameWithoutExtension(inputDoc) + ".html");
                 Dictionary<string, List<HtmlNode>> screensList = ImplementId(output_path + "\\" + Path.GetFileNameWithoutExtension(inputDoc) + ".html");
+                List<ChData> data = new List<ChData>();
+                StringBuilder strContent = new StringBuilder();
+                Dictionary<string, string> chData = new Dictionary<string, string>();
+                List<HtmlNode> receipeNodes = new List<HtmlNode>();
 
+                #region Footnote Items
+                List<HHMI.Footer> footnoteItems = new List<HHMI.Footer>();
+                if (screensList.ContainsKey("footnote"))
+                {
+                    List<HtmlNode> footnoteItem = screensList["footnote"];
+                    foreach (HtmlNode node in footnoteItem)
+                    {
+                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                        hDoc.LoadHtml(node.OuterHtml);
+                        HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td//strong[text()='contenttype']|//td//strong[text()='contenttype']");
+
+                        if (tdNodes != null)
+                        {
+                            HtmlNode tdNode = tdNodes[0];
+                            HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
+                            footnoteItems = LoadFootnoteData(trNodes, footnoteItems);
+                        }
+                    }
+                }
+                #endregion
+
+                #region Filter Receipe Nodes
+                List<HtmlNode> contents = screensList["chapterContent"];
+                if (contents != null)
+                {
+                    foreach (HtmlNode node in contents.ToList())
+                    {
+                        string inText = node.InnerText.Replace("\r", "").Replace("\n", "");
+                        if ((inText.ToLower().Contains("imgtextrecipe cards"))|| (inText.ToLower().Contains("imgtext recipe cards")))
+                        {
+                            receipeNodes.Add(node);
+                            contents.Remove(node);
+                        }
+                    }
+                }
+                #endregion
+
+                #region Load Navigation Items
+                List<HHMI.Navigation> NavigationItems = new List<HHMI.Navigation>();
+                if (screensList.ContainsKey("toc"))
+                {
+                    int firstlevel = 1;
+                    List<HtmlNode> tocItem = screensList["toc"];
+                    foreach (HtmlNode node in tocItem)
+                    {
+                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                        hDoc.LoadHtml(node.OuterHtml);
+                        HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td//strong[text()='name']|//td//strong[text()='name']");
+                        HHMI.Navigation navigation = new HHMI.Navigation();
+
+                        if (tdNodes != null)
+                        {
+                            HtmlNode tdNode = tdNodes[0];
+                            HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
+                            navigation = LoadNavData(trNodes, navigation, firstlevel);
+                        }
+                        NavigationItems.Add(navigation);
+                        firstlevel++;
+                    }
+                }
+                #endregion
+
+                #region Load Recipe Items
+                List<HHMI.Navigation> ReceipeItems = new List<HHMI.Navigation>();
+                if (screensList.ContainsKey("recipe-toc"))
+                {
+                    int firstlevel = NavigationItems.Count + 1;
+                    List<HtmlNode> tocItem = screensList["recipe-toc"];
+                    foreach (HtmlNode node in tocItem)
+                    {
+                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                        hDoc.LoadHtml(node.OuterHtml);
+                        HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td//strong[text()='name']|//td//strong[text()='name']");
+                        HHMI.Navigation navigation = new HHMI.Navigation();
+
+                        if (tdNodes != null)
+                        {
+                            HtmlNode tdNode = tdNodes[0];
+                            HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
+                            navigation = LoadRecipeData(trNodes, navigation, firstlevel, receipeNodes);
+                        }
+                        ReceipeItems.Add(navigation);
+                        firstlevel++;
+                    }
+                }
+                #endregion
+
+                #region Load Chapter Data Items
+                foreach (HHMI.Navigation item in NavigationItems)
+                {
+                    if ((item.childElements != null) && (item.childElements.Count > 0))
+                    {
+                        ChData data1 = new ChData();
+                        string navtitle = item.name;
+                        string content = CheckContent(navtitle, screensList);
+                        if (content != null)
+                            content = content.Replace("\"", "'");                        
+                            else
+                                content = "";
+                        chData.Add(item.pageId, content);
+                        strContent.AppendLine("\"" + item.pageId + "\"" + ":{");
+                        strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
+                        strContent.AppendLine("},");
+                        data1.pageId = item.pageId;
+                        data1.content = content;
+                        data.Add(data1);
+
+                        foreach (ChildElement element in item.childElements)
+                        {
+                            data1 = new ChData();
+                            navtitle = element.name;
+                            content = CheckContent(navtitle, screensList);
+                            if (content != null)
+                                content = content.Replace("\"", "'");
+                            else
+                                content = "";
+                            chData.Add(element.pageId, content);
+                            strContent.AppendLine("\"" + element.pageId + "\"" + ":{");
+                            strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
+                            strContent.AppendLine("},");
+                            data1.pageId = element.pageId;
+                            data1.content = content;
+                            data.Add(data1);
+                        }
+                    }
+                }
+                #endregion
+
+                string templatejson = System.Windows.Forms.Application.StartupPath + "\\template\\Guide.json";
+                HHMI.Root hhmitemplateJsonObjects =
+                JsonConvert.DeserializeObject<HHMI.Root>(File.ReadAllText(templatejson));
+                hhmitemplateJsonObjects.navigation = NavigationItems;
+                hhmitemplateJsonObjects.chData = data;
+                hhmitemplateJsonObjects.footer = footnoteItems;
+                string finalJson = JsonConvert.SerializeObject(hhmitemplateJsonObjects, Newtonsoft.Json.Formatting.Indented);
+                string guid = Guid.NewGuid().ToString();
+                string tempJson = System.Windows.Forms.Application.StartupPath + "\\Temp\\"+ guid+".json";
+                File.WriteAllText(tempJson, finalJson);
+                string[] allLines = File.ReadAllLines(tempJson);
+
+                #region Update Json
+                bool startEdit = false;
+                StringBuilder newJson = new StringBuilder();
+                foreach (string line in allLines)
+                {
+                    if (line.Contains("chData"))
+                    {
+                        startEdit = true;
+                    }
+                    if (startEdit == true)
+                    {
+                        if (line.Contains("chData"))
+                        {
+                            string newline = line.Replace("[", "{");
+                            newJson.AppendLine(newline);
+                        }
+                        else 
+                        {
+                            if (line.Contains("pageId"))
+                            {
+                                string newline = line.Replace(": ", ":");
+                                Regex reg = new Regex("\"" + "pageId" + "\"" + ":" + "(.+?)" + ",");
+                                newline = reg.Replace(newline, "$1" + ":{");
+                                newJson.AppendLine(newline);
+                            }
+                            else
+                            {
+                                if (line.Trim() == "]")
+                                {
+                                    string newline = line.Replace("]", "}");
+                                    newJson.AppendLine(newline);
+                                }
+                                else 
+                                {
+                                    if (line.Trim() == "{")
+                                    {
+                                    }
+                                    else
+                                    {
+                                        newJson.AppendLine(line);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else 
+                    {
+                        newJson.AppendLine(line);
+                    }
+                }
+                File.WriteAllText(tempJson, newJson.ToString());
+                #endregion
+
+                File.Copy(tempJson, Path.GetDirectoryName(inputDoc) + "\\" + Path.GetFileNameWithoutExtension(inputDoc) + ".json");
             }
         }
+        private static List<HHMI.Footer> LoadFootnoteData(HtmlNodeCollection trNodes, List<HHMI.Footer> footnoteItems)
+        {
+            foreach (HtmlNode trNode in trNodes)
+            {
+                HtmlNode chNode = GetCellNode(trNode);
+                if (chNode.Name != "#text")
+                {
+                    if (chNode.InnerText.Trim() == "contenttype")
+                    {
+                        HHMI.Footer footer = new HHMI.Footer();
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        footer.contenttype = value;
+                        footer.id = Convert.ToString(footnoteItems.Count+1);
+                        footnoteItems.Add(footer);
+                    }
+                    if (chNode.InnerText.Trim() == "title")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
 
+                        footnoteItems[footnoteItems.Count - 1].title = value;
+                    }
+                    if (chNode.InnerText.Trim() == "content")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.ToLower().Trim().Replace("\r","").Replace("\n", "").Trim()+".png";
+
+                        footnoteItems[footnoteItems.Count - 1].content = value;
+                    }
+                    if (chNode.InnerText.Trim() == "link")
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string value = nextSibling.InnerText.ToLower().Trim();
+
+                        footnoteItems[footnoteItems.Count - 1].link = value;
+                    }
+                }
+            }
+            return footnoteItems;
+        }
+        private static HHMI.Navigation LoadNavData(HtmlNodeCollection trNodes, HHMI.Navigation navigation, int firstlevel)
+        {
+            bool child = false;
+            bool appendix = false;
+            foreach (HtmlNode trNode in trNodes)
+            {
+                HtmlNode chNode = GetCellNode(trNode);
+                if (chNode.Name != "#text")
+                {
+                    if ((child == false) && (chNode.InnerText.Trim() == "name"))
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.name = value;
+                        navigation.id = firstlevel.ToString();
+                        navigation.pageId = firstlevel.ToString();
+                    }
+                    if ((child == true) && (chNode.InnerText.Trim() == "name"))
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+
+                        navigation.childElements[navigation.childElements.Count - 1].name = value;
+                    }
+                    if (chNode.InnerText.Trim() == "child")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.ToLower().Trim();
+                        if (value.ToLower().Trim().Contains("true"))
+                        {
+                            child = true;
+                            navigation.child = true;
+                        }
+                        else
+                        {
+                            navigation.child = false;
+                        }
+                    }
+                    if (chNode.InnerText.Trim() == "appendix")
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string value = nextSibling.InnerText.ToLower().Trim();
+                        if (value.ToLower().Trim().Contains("true"))
+                        {
+                            appendix = true;
+                            navigation.appendix = true;
+                        }
+                        else { navigation.appendix = false; }
+                    }
+                    if (chNode.InnerText.Trim() == "imgtext")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.imgtext = value;
+                    }
+                    if (chNode.InnerText.Trim() == "img")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.img = value;
+                    }
+                    if ((child == false) && (chNode.InnerText.Trim() == "templateId"))
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string templateId = nextSibling.InnerText.Trim();
+                        navigation.templateId = templateId;
+                    }
+                    if ((child == true) && (chNode.InnerText.Trim() == "templateId"))
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string templateId = nextSibling.InnerText.Trim();
+
+                        ChildElement childElement = new ChildElement();
+                        childElement.templateId = templateId;
+                        if (navigation.childElements == null)
+                        {
+                            List<ChildElement> elements = new List<ChildElement>();
+                            navigation.childElements = elements;
+                        }
+
+                        childElement.id = Convert.ToString(navigation.childElements.Count + 1);
+                        childElement.pageId = navigation.pageId + "-" + childElement.id;
+                        navigation.childElements.Add(childElement);
+                    }
+                }
+            }
+            return navigation;
+        }
+
+        private static HHMI.Navigation LoadRecipeData(HtmlNodeCollection trNodes, HHMI.Navigation navigation, int firstlevel, List<HtmlNode> receipeNodes)
+        {
+            bool child = false;
+            bool appendix = false;
+            foreach (HtmlNode trNode in trNodes)
+            {
+                HtmlNode chNode = GetCellNode(trNode);
+                if (chNode.Name != "#text")
+                {
+                    if ((child == false) && (chNode.InnerText.Trim() == "name"))
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.name = value;
+                        navigation.id = firstlevel.ToString();
+                        navigation.pageId = firstlevel.ToString();
+                    }
+                    if ((child == true) && (chNode.InnerText.Trim() == "name"))
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+
+                        navigation.childElements[navigation.childElements.Count - 1].name = value;
+                    }
+                    if (chNode.InnerText.Trim() == "child")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.ToLower().Trim();
+                        if (value.ToLower().Trim().Contains("true"))
+                        {
+                            child = true;
+                            navigation.child = true;
+                        }
+                        else
+                        {
+                            navigation.child = false;
+                        }
+                    }
+                    if (chNode.InnerText.Trim() == "appendix")
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string value = nextSibling.InnerText.ToLower().Trim();
+                        if (value.ToLower().Trim().Contains("true"))
+                        {
+                            appendix = true;
+                            navigation.appendix = true;
+                        }
+                        else { navigation.appendix = false; }
+                    }
+                    if (chNode.InnerText.Trim() == "imgtext")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.imgtext = value;
+                    }
+                    if (chNode.InnerText.Trim() == "img")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.img = value;
+                    }
+                    if ((child == false) && (chNode.InnerText.Trim() == "templateId"))
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string templateId = nextSibling.InnerText.Trim();
+                        navigation.templateId = templateId;
+                    }
+                    if ((child == true) && (chNode.InnerText.Trim() == "templateId"))
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string templateId = nextSibling.InnerText.Trim();
+
+                        ChildElement childElement = new ChildElement();
+                        childElement.templateId = templateId;
+                        if (navigation.childElements == null)
+                        {
+                            List<ChildElement> elements = new List<ChildElement>();
+                            navigation.childElements = elements;
+                        }
+
+                        childElement.id = Convert.ToString(navigation.childElements.Count + 1);
+                        childElement.pageId = navigation.pageId + "-" + childElement.id;
+                        navigation.childElements.Add(childElement);
+                    }
+                }
+            }
+
+            if (appendix == true)
+            {
+                foreach (HtmlNode trNode in receipeNodes)
+                { 
+                
+                }
+            }
+            return navigation;
+        }
+
+        private static HtmlNode CheckChild(HtmlNode node)
+        {
+            HtmlNode nextSib = node.NextSibling;
+            for (int k = 0; k < 4; k++)
+            {
+                if (nextSib.Name != "#text")
+                {
+                    if (nextSib.InnerText == "child")
+                    { 
+                    
+                    }
+                }
+                else
+                    nextSib = nextSib.NextSibling;
+            }
+            return nextSib;
+        }
+        private static string CheckContent(string title, Dictionary<string, List<HtmlNode>> screensList)
+        {
+            string content = null;
+            List<HtmlNode> contents = screensList["chapterContent"];
+            int i = 0;
+            foreach (HtmlNode node in contents)
+            {
+                HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                hDoc.LoadHtml(node.OuterHtml);
+                HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td");
+                bool matched = false;
+                foreach (HtmlNode chNode in tdNodes)
+                {
+                    if (chNode.InnerText.Trim() == "name")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string titleContent = nextSib.InnerText;
+                        if (title == titleContent)
+                        {
+                            matched = true;
+                        }
+                    }
+                    if (matched == true)
+                    {
+                        if (chNode.InnerText.ToLower().Trim() == "content")
+                        {
+                            HtmlNode nextSib = GetNextSibling(chNode);
+                            content = nextSib.InnerHtml;
+                            break;
+                        }
+                    }
+                }
+                if (content != null)
+                {
+                    break;
+                }
+                i++;
+            }
+            return content;
+        }
+        private static HtmlNode GetCellNode(HtmlNode node)
+        {
+            HtmlNode childNode= node;
+            foreach (HtmlNode chNode in node.ChildNodes)
+            {
+                if ((chNode.Name == "th") || (chNode.Name == "td"))
+                {
+                    childNode = chNode;
+                    break;
+                }
+            }
+            return childNode;
+        }
+        private static HtmlNode GetNextSibling(HtmlNode node)
+        {
+            HtmlNode nextSib = node.NextSibling;
+            if (nextSib != null)
+            {
+                for (int k = 0; k < 4; k++)
+                {
+                    if (nextSib.Name != "#text")
+                        break;
+                    else
+                        nextSib = nextSib.NextSibling;
+                }
+            }
+            return nextSib;
+        }
+        private static HtmlNode GetTrNextSibling(HtmlNode node)
+        {
+            HtmlNode trNode = node.Ancestors("td").First();
+            HtmlNode nextSib = trNode.NextSibling;
+            if (nextSib != null)
+            {
+                for (int k = 0; k < 4; k++)
+                {
+                    if (nextSib.Name != "#text")
+                        break;
+                    else
+                        nextSib = nextSib.NextSibling;
+                }
+            }
+            return nextSib;
+        }
         private static string WordExportProcess(string inputDoc, string newName, string tempFolder, string output_path)
         {
             File.Copy(inputDoc, tempFolder + "\\" + newName, true);
@@ -1860,13 +2387,13 @@ new JsonSerializerSettings
         private static void WriteTocJson(string assetFolderPath)
         {
             Toc.Root toc = new Toc.Root();
-            toc.id = "toc_001";
-            SharedObjects.component.TemplateID = "nav_001";
-            SharedObjects.component.Panels = SharedObjects.Panels;
-            SharedObjects.component.TemplateName = "Table of Content";
-            List<Toc.Component> components = new List<Toc.Component>();
-            components.Add(SharedObjects.component);
-            toc.components = components;
+            //toc.id = "toc_001";
+            //SharedObjects.component.TemplateID = "nav_001";
+            //SharedObjects.component.Panels = SharedObjects.Panels;
+            //SharedObjects.component.TemplateName = "Table of Content";
+            //List<Toc.Component> components = new List<Toc.Component>();
+            //components.Add(SharedObjects.component);
+            //toc.components = components;
             var json = JsonConvert.SerializeObject(toc, Newtonsoft.Json.Formatting.None,
    new JsonSerializerSettings
    {
@@ -3531,7 +4058,38 @@ new JsonSerializerSettings
                             }
                             else
                             {
-                                screensList[livescreen ].Add(node);
+                                screensList[livescreen].Add(node);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        HtmlNode preSib = node.PreviousSibling;
+                        if (preSib != null)
+                        {
+                            for (int i = 0; i < 3; i++)
+                            {
+                                if (preSib != null)
+                                {
+                                    if (preSib.InnerText.Length < 15)
+                                    {
+                                        if ((preSib.Name != "#text") && (preSib.InnerText.ToLower().Contains("footer")))
+                                        {
+                                            if (!screensList.ContainsKey("footnote"))
+                                            {
+                                                screensList.Add("footnote", new List<HtmlNode>());
+                                                screensList["footnote"].Add(node);
+                                            }
+                                            else
+                                            {
+                                                screensList["footnote"].Add(node);
+                                            }
+                                            break;
+                                        }
+                                        else { preSib = preSib.PreviousSibling; }
+                                    }
+                                }
+                                else { break; }
                             }
                         }
                     }
