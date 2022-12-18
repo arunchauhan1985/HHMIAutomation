@@ -26,11 +26,13 @@ namespace PEA_Docx_to_Widget
         public static int mathseq = 0;
         public static bool GlossaryEnable = true;
         public static int GlossaryPage { get; set; }
+        public static int pageIndex { get; set; }
         public static string GlossaryPageId { get; set; }
         public static Dictionary<string, GlossaryItem> glossaryList { get; set; }
         public static Dictionary<string, string> ColorList = new Dictionary<string, string>();
         public static Dictionary<string, string> popupList { get; set; }
         public static Dictionary<string, string> RubyList = new Dictionary<string, string>();
         public static Dictionary<string, Transcript> TranscriptList = new Dictionary<string, Transcript>();
+        public static Dictionary<string, string> nameList = new Dictionary<string, string>();
     }
 }

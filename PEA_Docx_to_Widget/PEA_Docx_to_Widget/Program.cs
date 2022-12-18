@@ -96,6 +96,8 @@ namespace PEA_Docx_to_Widget
                 StringBuilder strContent = new StringBuilder();
                 Dictionary<string, string> chData = new Dictionary<string, string>();
                 List<HtmlNode> receipeNodes = new List<HtmlNode>();
+                List<HtmlNode> receipeTocNodes = new List<HtmlNode>();
+                HtmlNode recipeTocNode = null;
 
                 #region Footnote Items
                 List<HHMI.Footer> footnoteItems = new List<HHMI.Footer>();
@@ -119,26 +121,72 @@ namespace PEA_Docx_to_Widget
                 #endregion
 
                 #region Filter Receipe Nodes
-                List<HtmlNode> contents = screensList["chapterContent"];
-                if (contents != null)
+                //List<HtmlNode> contents = screensList["chapterContent"];
+                //if (contents != null)
+                //{
+                //    foreach (HtmlNode node in contents.ToList())
+                //    {
+                //        string inText = node.InnerText.Replace("\r", "").Replace("\n", "");
+                //        if ((inText.ToLower().Contains("imgtextrecipe cards"))|| (inText.ToLower().Contains("imgtext recipe cards")))
+                //        {
+                //            receipeNodes.Add(node);
+                //            contents.Remove(node);
+                //        }
+                //    }
+                //}
+                List<HtmlNode> tocs = screensList["toc"];
+                int recIndex = 0;
+                if (tocs != null)
                 {
-                    foreach (HtmlNode node in contents.ToList())
+                    foreach (HtmlNode node in tocs.ToList())
                     {
-                        string inText = node.InnerText.Replace("\r", "").Replace("\n", "");
-                        if ((inText.ToLower().Contains("imgtextrecipe cards"))|| (inText.ToLower().Contains("imgtext recipe cards")))
+                        HtmlNode preSib = node.PreviousSibling;
+                        for(int i=0;i<5;i++)
                         {
-                            receipeNodes.Add(node);
-                            contents.Remove(node);
+                            if (preSib != null)
+                            {
+                                if ((preSib.Name != "#text") && (preSib.Name == "table"))
+                                {
+                                    if (preSib.InnerText.Contains("recipe-toc"))
+                                    {
+                                        recipeTocNode = preSib;                                        
+                                        break;
+                                    }
+                                }
+                                else { preSib = preSib.PreviousSibling; }
+                            }
+                        }
+                        if (recipeTocNode == null)
+                        {
+                            recIndex++;
                         }
                     }
                 }
+
+                for (int i = recIndex; i < tocs.Count; i++)
+                {
+                    HtmlNode node = tocs[i];
+                    string inText = node.InnerText.Replace("\r", " ").Replace("\n", "");
+                    if (!inText.ToLower().Contains("name note"))
+                    {
+                        receipeTocNodes.Add(node);
+                        tocs.Remove(node);
+                        i--;
+                    }
+                    else 
+                    {
+                        tocs.Insert(tocs.Count - 1, recipeTocNode);
+                        i++;
+                    }
+                }
+
                 #endregion
 
                 #region Load Navigation Items
                 List<HHMI.Navigation> NavigationItems = new List<HHMI.Navigation>();
                 if (screensList.ContainsKey("toc"))
                 {
-                    int firstlevel = 1;
+                    int firstlevelval = 1;
                     List<HtmlNode> tocItem = screensList["toc"];
                     foreach (HtmlNode node in tocItem)
                     {
@@ -151,42 +199,45 @@ namespace PEA_Docx_to_Widget
                         {
                             HtmlNode tdNode = tdNodes[0];
                             HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
-                            navigation = LoadNavData(trNodes, navigation, firstlevel);
+                            navigation = LoadNavData(trNodes, navigation, firstlevelval);
                         }
                         NavigationItems.Add(navigation);
-                        firstlevel++;
+                        firstlevelval++;
                     }
                 }
                 #endregion
+
+               int navIndex= GetReceipeSection(NavigationItems);
+               int firstlevel = GetIndex(NavigationItems);
 
                 #region Load Recipe Items
-                List<HHMI.Navigation> ReceipeItems = new List<HHMI.Navigation>();
-                if (screensList.ContainsKey("recipe-toc"))
+
+                List<AppendixElement> appendixItems = new List<AppendixElement>();
+                int recId = 1;
+                SharedObjects.pageIndex = 0;
+                foreach (HtmlNode node in receipeTocNodes)
                 {
-                    int firstlevel = NavigationItems.Count + 1;
-                    List<HtmlNode> tocItem = screensList["recipe-toc"];
-                    foreach (HtmlNode node in tocItem)
+                    HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                    hDoc.LoadHtml(node.OuterHtml);
+                    HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td//strong[text()='name']|//td//strong[text()='name']");
+                    AppendixElement navigation = new AppendixElement();
+
+                    if (tdNodes != null)
                     {
-                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
-                        hDoc.LoadHtml(node.OuterHtml);
-                        HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td//strong[text()='name']|//td//strong[text()='name']");
-                        HHMI.Navigation navigation = new HHMI.Navigation();
-
-                        if (tdNodes != null)
-                        {
-                            HtmlNode tdNode = tdNodes[0];
-                            HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
-                            navigation = LoadRecipeData(trNodes, navigation, firstlevel, receipeNodes);
-                        }
-                        ReceipeItems.Add(navigation);
-                        firstlevel++;
+                        HtmlNode tdNode = tdNodes[0];
+                        HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
+                        navigation = LoadAppendixData(trNodes, navigation, recId, firstlevel);
                     }
+                    appendixItems.Add(navigation);
+                    recId++;
                 }
-                #endregion
+                NavigationItems[navIndex].appendixElements = appendixItems;
 
+                #endregion
                 #region Load Chapter Data Items
                 foreach (HHMI.Navigation item in NavigationItems)
                 {
+                    #region Handle only Child Elements
                     if ((item.childElements != null) && (item.childElements.Count > 0))
                     {
                         ChData data1 = new ChData();
@@ -220,6 +271,62 @@ namespace PEA_Docx_to_Widget
                             data1.pageId = element.pageId;
                             data1.content = content;
                             data.Add(data1);
+                        }
+                    }
+                    #endregion
+
+                    if ((item.appendixElements != null) && (item.appendixElements.Count > 0))
+                    {
+                        ChData data1 = new ChData();
+                        string navtitle = item.name;
+                        string content = CheckContent(navtitle, screensList);
+                        if (content != null)
+                            content = content.Replace("\"", "'");
+                        else
+                            content = "";
+                        chData.Add(item.pageId, content);
+                        strContent.AppendLine("\"" + item.pageId + "\"" + ":{");
+                        strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
+                        strContent.AppendLine("},");
+                        data1.pageId = item.pageId;
+                        data1.content = content;
+                        data.Add(data1);
+                        foreach (AppendixElement appelement in item.appendixElements)
+                        {
+                            if ((appelement.childElements != null) && (appelement.childElements.Count > 0))
+                            {
+                                data1 = new ChData();
+                                navtitle = appelement.name;
+                                content = CheckContent(navtitle, screensList);
+                                if (content != null)
+                                    content = content.Replace("\"", "'");
+                                else
+                                    content = "";
+                                chData.Add(appelement.pageId, content);
+                                strContent.AppendLine("\"" + appelement.pageId + "\"" + ":{");
+                                strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
+                                strContent.AppendLine("},");
+                                data1.pageId = appelement.pageId;
+                                data1.content = content;
+                                data.Add(data1);
+                                foreach (ChildElement element in appelement.childElements)
+                                {
+                                    data1 = new ChData();
+                                    navtitle = element.name;
+                                    content = CheckContent(navtitle, screensList);
+                                    if (content != null)
+                                        content = content.Replace("\"", "'");
+                                    else
+                                        content = "";
+                                    chData.Add(element.pageId, content);
+                                    strContent.AppendLine("\"" + element.pageId + "\"" + ":{");
+                                    strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
+                                    strContent.AppendLine("},");
+                                    data1.pageId = element.pageId;
+                                    data1.content = content;
+                                    data.Add(data1);
+                                }
+                            }
                         }
                     }
                 }
@@ -350,6 +457,7 @@ namespace PEA_Docx_to_Widget
                         navigation.name = value;
                         navigation.id = firstlevel.ToString();
                         navigation.pageId = firstlevel.ToString();
+                        SharedObjects.nameList.Add(navigation.pageId, value);
                     }
                     if ((child == true) && (chNode.InnerText.Trim() == "name"))
                     {
@@ -357,6 +465,7 @@ namespace PEA_Docx_to_Widget
                         string value = nextSib.InnerText.Trim();
 
                         navigation.childElements[navigation.childElements.Count - 1].name = value;
+                        SharedObjects.nameList.Add(navigation.childElements[navigation.childElements.Count - 1].pageId, value);
                     }
                     if (chNode.InnerText.Trim() == "child")
                     {
@@ -422,8 +531,127 @@ namespace PEA_Docx_to_Widget
             }
             return navigation;
         }
+        private static AppendixElement LoadAppendixData(HtmlNodeCollection trNodes, AppendixElement navigation, int recId,int firstlevel)
+        {
+            bool child = false;
+            bool appendix = false;
+            //navigation = new AppendixElement();
+            foreach (HtmlNode trNode in trNodes)
+            {
+                HtmlNode chNode = GetCellNode(trNode);
+                if (chNode.Name != "#text")
+                {
+                    if ((child == false) && (chNode.InnerText.Trim() == "name"))
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.name = value;
+                        navigation.id = recId.ToString();
+                        SharedObjects.pageIndex = SharedObjects.pageIndex + 1;
+                        navigation.pageId = firstlevel.ToString() + "-" + (SharedObjects.pageIndex);
+                        SharedObjects.nameList.Add(navigation.pageId, value);
+                    }
+                    if ((child == true) && (chNode.InnerText.Trim() == "name"))
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
 
-        private static HHMI.Navigation LoadRecipeData(HtmlNodeCollection trNodes, HHMI.Navigation navigation, int firstlevel, List<HtmlNode> receipeNodes)
+                        navigation.childElements[navigation.childElements.Count - 1].name = value;
+                        SharedObjects.nameList.Add(navigation.childElements[navigation.childElements.Count - 1].pageId, value);
+                    }
+                    if (chNode.InnerText.Trim() == "child")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.ToLower().Trim();
+                        if (value.ToLower().Trim().Contains("true"))
+                        {
+                            child = true;
+                            navigation.child = true;
+                        }
+                        else
+                        {
+                            navigation.child = false;
+                        }
+                    }
+                    if (chNode.InnerText.Trim() == "appendix")
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string value = nextSibling.InnerText.ToLower().Trim();
+                        if (value.ToLower().Trim().Contains("true"))
+                        {
+                            appendix = true;
+                            navigation.appendix = true;
+                        }
+                        else { navigation.appendix = false; }
+                    }
+                    if (chNode.InnerText.Trim() == "imgtext")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.imgtext = value;
+                    }
+                    if (chNode.InnerText.Trim() == "img")
+                    {
+                        HtmlNode nextSib = GetNextSibling(chNode);
+                        string value = nextSib.InnerText.Trim();
+                        navigation.img = value;
+                    }
+                    if ((child == false) && (chNode.InnerText.Trim() == "templateId"))
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string templateId = nextSibling.InnerText.Trim();
+                        navigation.templateId = templateId;
+                    }
+                    if ((child == true) && (chNode.InnerText.Trim() == "templateId"))
+                    {
+                        HtmlNode nextSibling = GetNextSibling(chNode);
+                        string templateId = nextSibling.InnerText.Trim();
+
+                        ChildElement childElement = new ChildElement();
+                        childElement.templateId = templateId;
+                        if (navigation.childElements == null)
+                        {
+                            List<ChildElement> elements = new List<ChildElement>();
+                            navigation.childElements = elements;
+                        }
+
+                        childElement.id = Convert.ToString(navigation.childElements.Count + 1);
+                        SharedObjects.pageIndex = SharedObjects.pageIndex + 1;
+                        childElement.pageId = firstlevel + "-" + (SharedObjects.pageIndex);
+                        navigation.childElements.Add(childElement);
+                    }
+                }
+            }
+            return navigation;
+        }
+        private static int GetReceipeSection(List<HHMI.Navigation> NavigationItems)
+        {
+            int index = 0;
+            foreach (HHMI.Navigation nav in NavigationItems)
+            {
+                if (nav.name.Contains("Recipe Cards"))
+                {
+                    break;
+                }
+                index++;
+            }
+            return index;
+        }
+        private static int GetIndex(List<HHMI.Navigation> NavigationItems)
+        {
+            int index = 0;
+            foreach (HHMI.Navigation nav in NavigationItems)
+            {
+                if (nav.name.Contains("Recipe Cards"))
+                {
+                    index = Convert.ToInt32(nav.pageId);
+                    break;
+                }
+                index++;
+            }
+            return index;
+        }
+        private static HHMI.Navigation LoadRecipeData(HtmlNodeCollection trNodes, HHMI.Navigation navigation, int firstlevel, List<HtmlNode> receipeNodes, HtmlNode recipeTocNode)
         {
             bool child = false;
             bool appendix = false;
@@ -512,14 +740,114 @@ namespace PEA_Docx_to_Widget
 
             if (appendix == true)
             {
-                foreach (HtmlNode trNode in receipeNodes)
-                { 
-                
+                HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                hDoc.LoadHtml(recipeTocNode.OuterHtml);
+                HtmlAgilityPack.HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//td//strong[text()='name']|//td//strong[text()='name']");
+                if (tdNodes != null)
+                {
+                    HtmlNode tdNode = tdNodes[0];
+                    HtmlNodeCollection NewtrNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
+                    //navigation = LoadReceipeNavData(NewtrNodes, navigation, Convert.ToInt32(navigation.pageId));
                 }
             }
             return navigation;
         }
+        //private static List<AppendixElement> LoadReceipeNavData(List<HtmlNode> trNodes)
+        //{
+        //    //bool child = false;
+        //    //bool appendixStatus = false;
+        //    //List<AppendixElement> appendixElements = new List<AppendixElement>();
+        //    //HHMI.Navigation navigation = new HHMI.Navigation();
+        //    //foreach (HtmlNode trNode in trNodes)
+        //    //{
+        //    //    AppendixElement appendix = new AppendixElement();
+        //    //    HtmlNode chNode = GetCellNode(trNode);
+        //    //    if (chNode.Name != "#text")
+        //    //    {
+        //    //        if ((child == false) && (chNode.InnerText.Trim() == "name"))
+        //    //        {
+        //    //            HtmlNode nextSib = GetNextSibling(chNode);
+        //    //            string value = nextSib.InnerText.Trim();
+        //    //            appendix.name = value;
+        //    //            appendix.id = firstlevel.ToString();
+        //    //            appendix.pageId = firstlevel.ToString();
+        //    //        }
+        //    //        if ((child == true) && (chNode.InnerText.Trim() == "name"))
+        //    //        {
+        //    //            HtmlNode nextSib = GetNextSibling(chNode);
+        //    //            string value = nextSib.InnerText.Trim();
 
+        //    //            appendix.childElements[appendix.childElements.Count - 1].name = value;
+        //    //        }
+        //    //        if (chNode.InnerText.Trim() == "child")
+        //    //        {
+        //    //            HtmlNode nextSib = GetNextSibling(chNode);
+        //    //            string value = nextSib.InnerText.ToLower().Trim();
+        //    //            if (value.ToLower().Trim().Contains("true"))
+        //    //            {
+        //    //                child = true;
+        //    //                appendix.child = true;
+        //    //            }
+        //    //            else
+        //    //            {
+        //    //                appendix.child = false;
+        //    //            }
+        //    //        }
+        //    //        if (chNode.InnerText.Trim() == "appendix")
+        //    //        {
+        //    //            HtmlNode nextSibling = GetNextSibling(chNode);
+        //    //            string value = nextSibling.InnerText.ToLower().Trim();
+        //    //            if (value.ToLower().Trim().Contains("true"))
+        //    //            {
+        //    //                appendixStatus = true;
+        //    //                appendix.appendix = true;
+        //    //            }
+        //    //            else { appendix.appendix = false; }
+        //    //        }
+        //    //        if (chNode.InnerText.Trim() == "imgtext")
+        //    //        {
+        //    //            HtmlNode nextSib = GetNextSibling(chNode);
+        //    //            string value = nextSib.InnerText.Trim();
+        //    //            appendix.imgtext = value;
+        //    //        }
+        //    //        if (chNode.InnerText.Trim() == "img")
+        //    //        {
+        //    //            HtmlNode nextSib = GetNextSibling(chNode);
+        //    //            string value = nextSib.InnerText.Trim();
+        //    //            appendix.img = value;
+        //    //        }
+        //    //        if ((child == false) && (chNode.InnerText.Trim() == "templateId"))
+        //    //        {
+        //    //            HtmlNode nextSibling = GetNextSibling(chNode);
+        //    //            string templateId = nextSibling.InnerText.Trim();
+        //    //            appendix.templateId = templateId;
+        //    //        }
+        //    //        if ((child == true) && (chNode.InnerText.Trim() == "templateId"))
+        //    //        {
+        //    //            HtmlNode nextSibling = GetNextSibling(chNode);
+        //    //            string templateId = nextSibling.InnerText.Trim();
+
+        //    //            ChildElement childElement = new ChildElement();
+        //    //            childElement.templateId = templateId;
+        //    //            if (appendix.childElements == null)
+        //    //            {
+        //    //                List<ChildElement> elements = new List<ChildElement>();
+        //    //                appendix.childElements = elements;
+        //    //            }
+
+        //    //            childElement.id = Convert.ToString(appendix.childElements.Count + 1);
+        //    //            childElement.pageId = appendix.pageId + "-" + childElement.id;
+        //    //            appendix.childElements.Add(childElement);
+        //    //        }
+        //    //    }
+        //    //    //if (navigation.appendixElements == null) 
+        //    //    //{
+        //    //    //    navigation.appendixElements = appendixElements;
+        //    //    //}
+        //    //    //navigation1.appendixElements.Add(appendix);
+        //    //}
+        //    //return navigation1;
+        //}
         private static HtmlNode CheckChild(HtmlNode node)
         {
             HtmlNode nextSib = node.NextSibling;
