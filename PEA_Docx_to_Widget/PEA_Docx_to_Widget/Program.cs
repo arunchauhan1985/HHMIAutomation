@@ -201,7 +201,37 @@ namespace PEA_Docx_to_Widget
                             HtmlNodeCollection trNodes = tdNode.Ancestors("table").First().SelectNodes("//tr");
                             navigation = LoadNavData(trNodes, navigation, firstlevelval);
                         }
-                        NavigationItems.Add(navigation);
+                        if (navigation.name.ToLower() == "notes")
+                        {
+                            int index = 0;
+                            foreach (HHMI.Navigation nav in NavigationItems)
+                            {
+                                if (nav.name.ToLower() == "recipe cards")
+                                {
+                                    AppendixElement appendixElement = new AppendixElement();
+                                    appendixElement.name = navigation.name;
+                                    appendixElement.pageId = navigation.pageId;
+                                    appendixElement.templateId = navigation.templateId;
+                                    appendixElement.imgtext = navigation.imgtext;
+                                    appendixElement.img = navigation.img;
+                                    appendixElement.child = navigation.child;
+                                    appendixElement.appendix = navigation.appendix;
+                                    appendixElement.childElements = navigation.childElements;
+                                    if (NavigationItems[index].appendixElements==null)
+                                    {
+                                        List<AppendixElement> appendixElements = new List<AppendixElement>();
+                                        appendixElements.Add(appendixElement);
+                                        NavigationItems[index].appendixElements= appendixElements;
+                                    }
+                                    else { NavigationItems[index].appendixElements.Add(appendixElement); }
+                                }
+                                index++;
+                            }
+                        }
+                        else 
+                        {
+                            NavigationItems.Add(navigation);
+                        }
                         firstlevelval++;
                     }
                 }
@@ -231,9 +261,44 @@ namespace PEA_Docx_to_Widget
                     appendixItems.Add(navigation);
                     recId++;
                 }
+                if (NavigationItems[navIndex].appendixElements != null)
+                {
+                    foreach (AppendixElement element in NavigationItems[navIndex].appendixElements)
+                    {
+                        element.img = NavigationItems[navIndex].img;
+                        element.imgtext = NavigationItems[navIndex].imgtext;
+                        element.id = Convert.ToString(Convert.ToInt32(appendixItems[appendixItems.Count - 1].id) + 1);
+                        SharedObjects.pageIndex = SharedObjects.pageIndex + 1;
+                        element.pageId = NavigationItems[navIndex].id + "-" + (SharedObjects.pageIndex);
+                        if (element.childElements != null)
+                        {
+                            foreach (var chelem in element.childElements)
+                            {
+                                SharedObjects.pageIndex = SharedObjects.pageIndex + 1;
+                                chelem.pageId = NavigationItems[navIndex].id + "-" + (SharedObjects.pageIndex);
+                            }
+                        }
+                        appendixItems.Add(element);
+                    }
+                    NavigationItems[navIndex].appendixElements.Clear();
+                }
+
+                foreach (var elem in appendixItems)
+                {
+                    if (elem.img == null)
+                    {
+                        elem.img = NavigationItems[navIndex].img;
+                    }
+                    if (elem.imgtext == null)
+                    {
+                        elem.imgtext = NavigationItems[navIndex].imgtext;
+                    }
+                }
+
                 NavigationItems[navIndex].appendixElements = appendixItems;
 
                 #endregion
+
                 #region Load Chapter Data Items
                 foreach (HHMI.Navigation item in NavigationItems)
                 {
@@ -247,6 +312,9 @@ namespace PEA_Docx_to_Widget
                             content = content.Replace("\"", "'");                        
                             else
                                 content = "";
+
+                        content = SetTags(content);
+
                         chData.Add(item.pageId, content);
                         strContent.AppendLine("\"" + item.pageId + "\"" + ":{");
                         strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
@@ -264,6 +332,9 @@ namespace PEA_Docx_to_Widget
                                 content = content.Replace("\"", "'");
                             else
                                 content = "";
+
+                            content = SetTags(content);
+
                             chData.Add(element.pageId, content);
                             strContent.AppendLine("\"" + element.pageId + "\"" + ":{");
                             strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
@@ -284,6 +355,9 @@ namespace PEA_Docx_to_Widget
                             content = content.Replace("\"", "'");
                         else
                             content = "";
+
+                        content = SetTags(content);
+
                         chData.Add(item.pageId, content);
                         strContent.AppendLine("\"" + item.pageId + "\"" + ":{");
                         strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
@@ -302,6 +376,9 @@ namespace PEA_Docx_to_Widget
                                     content = content.Replace("\"", "'");
                                 else
                                     content = "";
+
+                                content = SetTags(content);
+
                                 chData.Add(appelement.pageId, content);
                                 strContent.AppendLine("\"" + appelement.pageId + "\"" + ":{");
                                 strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
@@ -318,6 +395,9 @@ namespace PEA_Docx_to_Widget
                                         content = content.Replace("\"", "'");
                                     else
                                         content = "";
+
+                                    content = SetTags(content);
+
                                     chData.Add(element.pageId, content);
                                     strContent.AppendLine("\"" + element.pageId + "\"" + ":{");
                                     strContent.AppendLine("\"" + "content" + "\"" + ":" + content);
@@ -347,6 +427,9 @@ namespace PEA_Docx_to_Widget
                 #region Update Json
                 bool startEdit = false;
                 StringBuilder newJson = new StringBuilder();
+                newJson.AppendLine("window.ACTIVITY_DATA = {");
+                newJson.AppendLine("\"" + "template" + "\"" + ": \"Genes\""+",");
+                newJson.AppendLine("\""+"Genes"+"\""+":");
                 foreach (string line in allLines)
                 {
                     if (line.Contains("chData"))
@@ -394,12 +477,204 @@ namespace PEA_Docx_to_Widget
                         newJson.AppendLine(line);
                     }
                 }
+                newJson.AppendLine("}");
                 File.WriteAllText(tempJson, newJson.ToString());
                 #endregion
 
-                File.Copy(tempJson, Path.GetDirectoryName(inputDoc) + "\\" + Path.GetFileNameWithoutExtension(inputDoc) + ".json");
+                File.Copy(tempJson, Path.GetDirectoryName(inputDoc) + "\\" + "data.js",true);
+
+                if (SharedObjects.imageList.Count>0)
+                {
+                    foreach (KeyValuePair<string, string> image in SharedObjects.imageList)
+                    {
+                        if (!Directory.Exists(Path.GetDirectoryName(inputDoc) + "\\images"))
+                        {
+                            Directory.CreateDirectory(Path.GetDirectoryName(inputDoc) + "\\images");
+                        }
+                        string imgdirPath = Path.GetDirectoryName(SharedObjects.DocPath) + "\\" + Path.GetFileNameWithoutExtension(SharedObjects.DocPath)+"_files";
+                        if (File.Exists(imgdirPath + "\\" + Path.GetFileNameWithoutExtension(image.Value) + ".jpg"))
+                        {
+                            File.Copy(imgdirPath + "\\" + Path.GetFileNameWithoutExtension(image.Value) + ".jpg", Path.GetDirectoryName(inputDoc) + "\\images\\" + image.Key, true);
+                        }
+                        if (File.Exists(imgdirPath + "\\" + Path.GetFileNameWithoutExtension(image.Value) + ".jpeg"))
+                        {
+                            File.Copy(imgdirPath + "\\" + Path.GetFileNameWithoutExtension(image.Value) + ".jpeg", Path.GetDirectoryName(inputDoc) + "\\images\\" + image.Key, true);
+                        }
+                        if (File.Exists(imgdirPath + "\\" + Path.GetFileNameWithoutExtension(image.Value) + ".png"))
+                        {
+                            File.Copy(imgdirPath + "\\" + Path.GetFileNameWithoutExtension(image.Value) + ".png", Path.GetDirectoryName(inputDoc) + "\\images\\" + image.Key, true);
+                        }
+                    }
+                }
             }
         }
+
+        private static string SetTags(string content)
+        {
+            content = SetLinking(content);
+            HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+            hDoc.OptionWriteEmptyNodes = true;
+            hDoc.LoadHtml(content);
+            HtmlNodeCollection tableNodes = hDoc.DocumentNode.SelectNodes("//td/img");
+            if (tableNodes != null)
+            {
+                foreach (HtmlNode htmlNode in tableNodes)
+                {
+                    SharedObjects.imageList.Add(Path.GetFileName(htmlNode.Attributes["src"].Value), Path.GetFileName(htmlNode.Attributes["src"].Value));
+                    var tables = htmlNode.Ancestors("tr").ToList();
+                    HtmlNode tableNode= htmlNode.Ancestors("table").ToList()[0];
+                    string alt = GetAlt(tables[0]);
+                    string caption = GetCaption(tables[0]);
+                    
+                    if ((alt != "") && (caption != ""))
+                    {
+                        HtmlNode tempNode = hDoc.CreateElement("temp");
+
+                        string codestruct = "<div class='img-wrap'><div class='img-container'><img src='./assets/images/"+ Path.GetFileName(htmlNode.Attributes["src"].Value)+ "' alt='"+ alt + "' /></div><div class='img-hr'></div><div class='title-container'>"+ caption + "</div></div>";
+                        tempNode.InnerHtml = codestruct;
+                        tableNode.ParentNode.ReplaceChild(tempNode,tableNode);
+                    }
+                    else 
+                    {
+                        if (alt != "")
+                        {
+                            HtmlNode tempNode = hDoc.CreateElement("temp");
+                            htmlNode.Attributes.Add("alt", alt);
+                            htmlNode.Attributes["src"].Value = "./assets/images/" + Path.GetFileName(htmlNode.Attributes["src"].Value);
+                            tempNode.InnerHtml = htmlNode.OuterHtml;
+                            tableNode.ParentNode.ReplaceChild(tempNode, tableNode);
+                        }
+                        if (caption != "")
+                        {
+                            HtmlNode tempNode = hDoc.CreateElement("temp");
+                            string codestruct = "<div class='img-wrap'><div class='img-container'><img src='./assets/images/" + Path.GetFileName(htmlNode.Attributes["src"].Value) + "' alt='Some alt text from image.' /></div><div class='img-hr'></div><div class='title-container'>" + caption + "</div></div>";
+                            tempNode.InnerHtml = codestruct;
+                            tableNode.ParentNode.ReplaceChild(tempNode, tableNode);
+                        }
+                    }
+                    
+                }
+            }
+
+            return hDoc.DocumentNode.OuterHtml.Replace("<temp>","").Replace("</temp>", "");
+        }
+                   
+        public static string GetAlt(HtmlNode node)
+        {
+            string alt = "";
+            HtmlNode sibling = node.NextSibling;
+            for (int i = 0; i < 3; i++)
+            {
+                if(alt=="")
+                {
+                    if ((sibling != null) && (sibling.Name != "#text"))
+                    {
+                        string outHtml = sibling.OuterHtml;
+                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                        hDoc.OptionWriteEmptyNodes = true;
+                        hDoc.LoadHtml(outHtml);
+                        HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//table//td");
+                        if (tdNodes != null)
+                        {
+                            bool found = false;
+                            foreach (HtmlNode tdNode in tdNodes)
+                            {
+                                if ((tdNode.InnerText.Contains("Alt:"))|| (tdNode.InnerText.Trim()=="Alt"))
+                                {
+                                    found = true;
+                                }
+                                else
+                                {
+                                    if (found == true)
+                                    {
+                                        alt = tdNode.InnerText;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else { sibling = sibling.NextSibling; }
+                }
+                else 
+                {
+                    if (alt == "")
+                    {
+                        sibling = sibling.NextSibling;
+                    }
+                    else { break; }
+                }
+            }
+            return alt;
+        }
+        public static string GetCaption(HtmlNode node)
+        {
+            string caption = "";
+            HtmlNode sibling = node.NextSibling;
+            for (int i = 0; i < 6; i++)
+            {
+                if (caption == "")
+                {
+                    if ((sibling != null) && (sibling.Name != "#text"))
+                    {
+                        string outHtml = sibling.OuterHtml;
+                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                        hDoc.OptionWriteEmptyNodes = true;
+                        hDoc.LoadHtml(outHtml);
+                        HtmlNodeCollection tdNodes = hDoc.DocumentNode.SelectNodes("//table//td");
+                        if (tdNodes != null)
+                        {
+                            bool found = false;
+                            foreach (HtmlNode tdNode in tdNodes)
+                            {
+                                if ((tdNode.InnerText.Contains("Caption:")) || (tdNode.InnerText.Trim() == "Caption"))
+                                {
+                                    found = true;
+                                }
+                                else
+                                {
+                                    if (found == true)
+                                    {
+                                        caption = tdNode.InnerText;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        sibling = sibling.NextSibling;
+                    }
+                    else { if (sibling == null) { break; } else { sibling = sibling.NextSibling; } }
+                }
+                else
+                {
+                    if (caption == "")
+                    {
+                        sibling = sibling.NextSibling;
+                    }
+                    else { break; }
+                }
+            }
+            return caption;
+        }
+        public static string SetLinking(string content)
+        {
+            HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+            hDoc.OptionWriteEmptyNodes = true;
+            hDoc.LoadHtml(content);
+            HtmlNodeCollection aNodes = hDoc.DocumentNode.SelectNodes("//a");
+            if (aNodes != null)
+            {
+                foreach (HtmlNode aNode in aNodes)
+                {
+                    if (aNode.Attributes["href"].Value.StartsWith("http"))
+                    {
+                        aNode.Attributes.Add("target", "_blank");
+                    }
+                }
+            }
+            return hDoc.DocumentNode.OuterHtml;
+        }
+
         private static List<HHMI.Footer> LoadFootnoteData(HtmlNodeCollection trNodes, List<HHMI.Footer> footnoteItems)
         {
             foreach (HtmlNode trNode in trNodes)
@@ -426,9 +701,35 @@ namespace PEA_Docx_to_Widget
                     if (chNode.InnerText.Trim() == "content")
                     {
                         HtmlNode nextSib = GetNextSibling(chNode);
-                        string value = nextSib.InnerText.ToLower().Trim().Replace("\r","").Replace("\n", "").Trim()+".png";
-
-                        footnoteItems[footnoteItems.Count - 1].content = value;
+                        string outhtml = nextSib.OuterHtml;
+                        HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+                        hDoc.OptionWriteEmptyNodes = true;
+                        hDoc.LoadHtml(outhtml);
+                        HtmlNode imgNode = hDoc.DocumentNode.SelectSingleNode("//img");
+                        if (imgNode != null)
+                        {
+                            string value = footnoteItems[footnoteItems.Count - 1].title.ToLower().Trim().Replace("\r", "").Replace("\n", "").Trim() + ".png";
+                            string imageName = Path.GetFileName(imgNode.Attributes["src"].Value);
+                            if (!SharedObjects.imageList.ContainsKey(value))
+                                SharedObjects.imageList.Add(value, imageName);
+                            footnoteItems[footnoteItems.Count - 1].content = value;
+                        }
+                        else 
+                        {
+                            string value = nextSib.InnerText.ToLower().Trim(); 
+                            footnoteItems[footnoteItems.Count - 1].content = value;
+                            if (footnoteItems[footnoteItems.Count - 1].contenttype == "popup")
+                            {
+                                if (value == "contact us")
+                                {
+                                    footnoteItems[footnoteItems.Count - 1].popupContent = "<div class='contact-content'> <div>Contact Information:</div> <div> Email: <a href=''>info@seaphages.org</a> </div> Website: <a href=''>seaphages.org</a> </div>";
+                                }
+                                if (value == "copyright")
+                                {
+                                    footnoteItems[footnoteItems.Count - 1].popupContent = "<div class='copyright-content'> <p>    Marianne Poxleitner1, Welkin Pope2, Deborah Jacobs-Sera2, Viknesh    Sivanathan3, Graham Hatfull2 Gonzaga University1, University of Pittsburgh2, Howard Hughes Medical Institute3 The Science Education Alliance-Phage Hunters Advancing Genomics and Evolutionary Science Supported by the Howard Hughes Medical Institute <br /> <br /> <br /> Contact Information: Email:<a href=''>info@seaphages.org</a> | Website:<a href=''>seaphages.org</a> <br /> <br /> <br /> With contributions from: <br /> <br /> Ilzat Ali, Aleem Mohamed, Emily Davis, and Ariel Egbunine, University of Maryland Baltimore County Priscilla Kobi3, William Biederman3, Danielle Heller3 <br /> <br />Kevin Bradley, Infectious Disease Programs at the Association of Public Health Laboratories<br /><br />Steven Cresawn, James Madison University<br /><br />Dan Russell, University of Pittsburgh <br /><br />    Nicholas M. Jaramillo, Graphic Artist: Figures 3.0-2, 3.0-3,    3.0-4, 3.0-5,8.0-2 <br /><br /><br /><br />    <br />    Some text and figures adapted from the SEA-PHAGES Resource Guide ©    2012, Howard Hughes Medical Institute, and the NGRI In Silico    Phage Resource Guide, Analyze © 2008, Howard Hughes Medical    Institute, including Figures 13.0-4, 13.0-5, and 13.0-8 by Lucia    Barker  </p></div>";
+                                }
+                            }
+                        }
                     }
                     if (chNode.InnerText.Trim() == "link")
                     {
@@ -629,7 +930,7 @@ namespace PEA_Docx_to_Widget
             int index = 0;
             foreach (HHMI.Navigation nav in NavigationItems)
             {
-                if (nav.name.Contains("Recipe Cards"))
+                if (nav.name.ToLower().Contains("recipe cards"))
                 {
                     break;
                 }
@@ -642,7 +943,7 @@ namespace PEA_Docx_to_Widget
             int index = 0;
             foreach (HHMI.Navigation nav in NavigationItems)
             {
-                if (nav.name.Contains("Recipe Cards"))
+                if (nav.name.ToLower().Contains("recipe cards"))
                 {
                     index = Convert.ToInt32(nav.pageId);
                     break;
@@ -752,6 +1053,7 @@ namespace PEA_Docx_to_Widget
             }
             return navigation;
         }
+
         //private static List<AppendixElement> LoadReceipeNavData(List<HtmlNode> trNodes)
         //{
         //    //bool child = false;
@@ -978,7 +1280,7 @@ namespace PEA_Docx_to_Widget
 
             //docPath = UpdateMath(docPath);
             //docPath = getmaths(docPath, tempFolderApp);
-
+            SharedObjects.DocPath = docPath;
             #endregion
             string command = System.Windows.Forms.Application.StartupPath + "\\lib\\" + "pandoc.exe -t html -s " + docPath + " -o " + htmlPath + " -N --extract-media=" + System.IO.Path.GetDirectoryName(docPath) + "\\" + System.IO.Path.GetFileNameWithoutExtension(docPath).Replace(" ", "_") + "_images";
             ExecuteCommandMain(command);
@@ -1136,8 +1438,42 @@ namespace PEA_Docx_to_Widget
             {
                 output_path = dataDir[0];
             }
-            File.Copy(htmlPath, output_path + "\\" + Path.GetFileNameWithoutExtension(inputDoc) + ".html", true);
-            return output_path;
+            string filedir = output_path + "\\" + Path.GetFileNameWithoutExtension(inputDoc);
+            if (!Directory.Exists(filedir))
+            {
+                Directory.CreateDirectory(filedir);
+            }
+            string newHtmlFile = filedir + "\\" + Path.GetFileNameWithoutExtension(inputDoc) + ".html";
+            File.Copy(htmlPath, newHtmlFile, true);
+
+            HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
+            hDoc.OptionWriteEmptyNodes = true;
+            hDoc.Load(newHtmlFile, Encoding.UTF8);
+            HtmlNodeCollection nodes = hDoc.DocumentNode.SelectNodes("//img");
+            if (nodes != null)
+            {
+                foreach (HtmlNode node in nodes)
+                {
+                    if (node.Attributes["src"] != null)
+                    {
+                        string src = node.Attributes["src"].Value;
+                        string imagedir = filedir + "\\images";
+                        if (!Directory.Exists(imagedir))
+                            Directory.CreateDirectory(imagedir);
+
+                        if (!File.Exists(imagedir + "\\" + Path.GetFileName(src)))
+                            File.Copy(src, imagedir + "\\" + Path.GetFileName(src));
+                        node.Attributes["src"].Value = "images/" + Path.GetFileName(src);
+                    }
+                }
+                hDoc.Save(newHtmlFile);
+                hDoc = new HtmlAgilityPack.HtmlDocument();
+                hDoc.OptionWriteEmptyNodes = true;
+                hDoc.Load(newHtmlFile, Encoding.UTF8);
+                hDoc.Save(newHtmlFile);
+            }
+
+            return filedir;
         }
         private static String GetKnownColor(int iARGBValue, string hexcode)
         {
@@ -2322,25 +2658,25 @@ namespace PEA_Docx_to_Widget
         }
         private static void GetAllTables(string htmlFile)
         {   
-            List<HtmlNode> tables = new List<HtmlNode>();
-            HtmlAgilityPack.HtmlDocument tDoc = new HtmlAgilityPack.HtmlDocument();
-            tDoc.OptionWriteEmptyNodes = true;
-            tDoc.Load(htmlFile);
-            HtmlAgilityPack.HtmlNodeCollection tdNodes = tDoc.DocumentNode.SelectNodes("//table");
-            if (tdNodes != null)
-            {
-                int num = 1;
-                foreach (HtmlNode htmlNode in tdNodes)
-                {
-                    htmlNode.Attributes.Add("id", "Table_" + num);
+            //List<HtmlNode> tables = new List<HtmlNode>();
+            //HtmlAgilityPack.HtmlDocument tDoc = new HtmlAgilityPack.HtmlDocument();
+            //tDoc.OptionWriteEmptyNodes = true;
+            //tDoc.Load(htmlFile);
+            //HtmlAgilityPack.HtmlNodeCollection tdNodes = tDoc.DocumentNode.SelectNodes("//table");
+            //if (tdNodes != null)
+            //{
+            //    int num = 1;
+            //    foreach (HtmlNode htmlNode in tdNodes)
+            //    {
+            //        htmlNode.Attributes.Add("id", "Table_" + num);
 
-                    SharedObjects.TablePanDoc.Add("Table_" + num, htmlNode);
+            //        SharedObjects.TablePanDoc.Add("Table_" + num, htmlNode);
 
 
-                    num++;
-                }
-                tDoc.Save(htmlFile);
-            }
+            //        num++;
+            //    }
+            //    tDoc.Save(htmlFile);
+            //}
         }
         private static void unzipfile(string f_path)
         {
@@ -4665,17 +5001,20 @@ new JsonSerializerSettings
             string nodeouter = node.OuterHtml;
             HtmlAgilityPack.HtmlDocument hDoc = new HtmlAgilityPack.HtmlDocument();
             hDoc.LoadHtml(nodeouter);
-            HtmlAgilityPack.HtmlNodeCollection thNodes = hDoc.DocumentNode.SelectNodes("//th");
+            HtmlAgilityPack.HtmlNodeCollection thNodes = hDoc.DocumentNode.SelectNodes("//td|//th");
             HtmlNode screenNode = null;
             int j = 0;
-            foreach (HtmlNode htmlNode in thNodes)
+            if (thNodes != null)
             {
-                if ((htmlNode.Name!="#text")&&(htmlNode.InnerText.Contains("templateId")))
+                foreach (HtmlNode htmlNode in thNodes)
                 {
-                    HtmlNode valueNode = thNodes[j + 1];
-                    screenNode = valueNode;
-                    break;
-                    j++;
+                    if ((htmlNode.Name != "#text") && (htmlNode.InnerText.Contains("templateId")))
+                    {
+                        HtmlNode valueNode = thNodes[j + 1];
+                        screenNode = valueNode;
+                        break;
+                        j++;
+                    }
                 }
             }
             return screenNode;

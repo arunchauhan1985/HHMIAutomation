@@ -56,7 +56,7 @@ namespace hhmi_Docx_to_Widget
             public string img { get; set; }
             public bool child { get; set; }
             public List<ChildElement> childElements { get; set; }
-            public bool? appendix { get; set; }
+            public bool appendix { get; set; }
             public List<AppendixElement> appendixElements { get; set; }
         }
 
